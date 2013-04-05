@@ -35,7 +35,7 @@
 {if $acc_balance && $acc_balance>0}
 <div class="yelbox">
 <form method="post" action="">
-<input type="hidden" name="action" value="payall"/>
+{if $enableFeatures.bulkpayments!='off'} <input type="hidden" name="action" value="payall"/>{else} <input type="hidden" name="action" value="invoices"/>{/if}
 <input type="hidden" name="cmd" value="clientarea"/>
 {$lang.curbalance}: <strong>{$acc_balance|price:$currency}</strong>
 <center><input type="submit" value="{$lang.paynow}" class="padded" style="font-weight:bold;margin:5px;"/></center>

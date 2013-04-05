@@ -53,7 +53,7 @@ Clientarea dashboard - summary of owned services, due invoices, opened tickets
                 {$lang.dueinvoices} {if $acc_balance && $acc_balance>0} <span style="color:red">{$acc_balance|price:$currency}</span>{/if}
 
                 <div class="right wbox_right">  <form method="post" action="index.php" style="margin:0px">
-                        <input type="hidden" name="action" value="payall"/>
+{if $enableFeatures.bulkpayments!='off'} <input type="hidden" name="action" value="payall"/>{else} <input type="hidden" name="action" value="invoices"/>{/if}
                         <input type="hidden" name="cmd" value="clientarea"/>
                         <button type="submit" class="btn btn-success"><i class="icon-ok-sign icon-white"></i> {$lang.paynowdueinvoices}</button>{securitytoken}</form>
                 </div>

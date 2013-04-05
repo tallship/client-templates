@@ -13,10 +13,10 @@
                      <a href="{$ca_url}clientarea&action=addfunds" class="btn btn-info btn-large">{$lang.addfunds}</a>
                 </div>
                  {/if}
-                 {if $acc_balance && $acc_balance>0}
+                 {if $acc_balance && $acc_balance>0 && $enableFeatures.bulkpayments!='off'}
                  <div class="right" style="margin-left:10px">
                      <form method="post" action="index.php">
-                    <input type="hidden" name="action" value="payall"/>
+<input type="hidden" name="action" value="payall"/>
                     <input type="hidden" name="cmd" value="clientarea"/>
                     <button class="btn btn-success btn-large"><i class="icon-ok-sign icon-white"></i> <b>{$lang.paynowdueinvoices}</b></button>
                     {securitytoken}</form>
