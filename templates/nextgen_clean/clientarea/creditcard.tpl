@@ -39,7 +39,7 @@ Manage credit card on file, submit new credit card details
             <form action="" method="post" style="margin-bottom:0px;">
 
             <div class="modal-header">
-                <a class="close" data-dismiss="modal">×</a>
+                <a class="close-modal" data-dismiss="modal">×</a>
                 <h3>{$lang.changeccdesc}</h3>
             </div>
             <div class="modal-body">

@@ -124,7 +124,7 @@
             <form action="" method="post" style="margin-bottom:0px;">
 
             <div class="modal-header">
-                <a class="close" data-dismiss="modal">×</a>
+                <a class="close-modal" data-dismiss="modal">×</a>
                 <h3>CVV Info</h3>
             </div>
             <div class="modal-body">
