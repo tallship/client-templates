@@ -912,7 +912,11 @@ ul#progress li.lastone{
 .ie9 .iconfont-size2:before,
 .ie9 .iconfont-size3:before,
 .ie9 .iconfont-size4:before,
-.ie9 .iconfont-size5:before {
+.ie9 .iconfont-size5:before,
+.ie10 .iconfont-size2:before,
+.ie10 .iconfont-size3:before,
+.ie10 .iconfont-size4:before,
+.ie10 .iconfont-size5:before {
     font-size: 0.25em;
 }
 

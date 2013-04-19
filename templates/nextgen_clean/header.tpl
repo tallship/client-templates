@@ -5,6 +5,7 @@
 <!--[if (IE 9)&!(IEMobile)]><html class="no-js ie9" lang="en"><![endif]-->
 <!--[if (gt IE 9)|(gt IEMobile 7)]><!--><html lang="en"><!--<![endif]-->
     <head>
+<!--[if !IE]><!-->{literal}<script>if(/*@cc_on!@*/false){document.documentElement.className+=' ie10';}</script>{/literal}<!--<![endif]-->
         <meta charset="utf-8">
         <base href="{$system_url}" />
         <title>{$hb}{if $pagetitle}{$pagetitle} -{/if} {$business_name}</title>

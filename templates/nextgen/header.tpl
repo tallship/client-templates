@@ -3,8 +3,10 @@
 <!--[if (IE 7)&!(IEMobile)]><html class="no-js ie7 oldie" lang="en"><![endif]-->
 <!--[if (IE 8)&!(IEMobile)]><html class="no-js ie8 oldie" lang="en"><![endif]-->
 <!--[if (IE 9)&!(IEMobile)]><html class="no-js ie9" lang="en"><![endif]-->
-<!--[if (gt IE 9)|(gt IEMobile 7)]><!--><html lang="en"><!--<![endif]-->
+<!--[if (IE 10)&!(IEMobile)]><html class="ie10" lang="en"><![endif]-->
+<!--[if (gt IE 10)|(gt IEMobile 7)]><!--><html lang="en"><!--<![endif]-->
     <head>
+<!--[if !IE]><!-->{literal}<script>if(/*@cc_on!@*/false){document.documentElement.className+=' ie10';}</script>{/literal}<!--<![endif]-->
         <meta charset="utf-8">
         <base href="{$system_url}" />
         <title>{$hb}{if $pagetitle}{$pagetitle} -{/if} {$business_name}</title>
