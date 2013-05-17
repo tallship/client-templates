@@ -184,7 +184,7 @@ function switchdeptdesc(items) {
                           <td><strong>{$reply.name}</strong> {if $reply.type=='Admin'}{$lang.staff}{/if}</td>
                           <td align="right">
                               {$reply.date|dateformat:$date_format}
-                              {if $reply.type!='Client'}
+                              {if $reply.type=='Admin'}
                                   <div class="right rating-box {if $reply.rate_date}jDisabled{/if}" id="{$reply.rating}_{$reply.id}{if $ticket.client_id==0}_{$ticket.acc_hash}{/if}"></div>
                                   {if !$reply.rate_date}<span class="right" style="margin-left:10px">{$lang.ratemyresponse}</span>{/if}
                               {/if}

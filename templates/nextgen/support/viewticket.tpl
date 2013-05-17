@@ -140,11 +140,11 @@
                         <span class="iconfont-user iconfont-size1 {if $reply.type=='Client'}black{else}red{/if}"></span>
                     </div>
 
-                    <div class="byline left" rel="tooltip" {if $reply.type!='Client'}rel="tooltip" title="{$lang.staff}"{/if}><strong>{$reply.name}</strong> {$reply.date|dateformat:$date_format}</div>
+                    <div class="byline left" rel="tooltip" {if $reply.type=='Admin'}rel="tooltip" title="{$lang.staff}"{/if}><strong>{$reply.name}</strong> {$reply.date|dateformat:$date_format}</div>
 
 
                     <a class="right btn btn-mini quoter" rel="tooltip" title="Quote" onclick="return quoteTicket('r{$reply.id}');"><i class="icon-share"></i></a>
-                    {if $reply.type!='Client'}
+                    {if $reply.type=='Admin'}
                         <div class="right rating-box {if $reply.rate_date}jDisabled{/if}" id="{$reply.rating}_{$reply.id}{if $ticket.client_id==0}_{$ticket.acc_hash}{/if}"></div>
                         {if !$reply.rate_date}<span class="right byline" >{$lang.ratemyresponse}</span>{/if}
                     {/if}
@@ -178,7 +178,7 @@
                         <span class="iconfont-user iconfont-size1 {if $ticket.type=='Client'}black{else}red{/if}"></span>
                     </div>
 
-                    <div class="byline left" rel="tooltip" {if $ticket.type!='Client'}rel="tooltip" title="{$lang.staff}"{/if}><strong>{$ticket.name}</strong> {$ticket.date|dateformat:$date_format}</div>
+                    <div class="byline left" rel="tooltip" {if $ticket.type=='Admin'}rel="tooltip" title="{$lang.staff}"{/if}><strong>{$ticket.name}</strong> {$ticket.date|dateformat:$date_format}</div>
 
                     <a class="right btn btn-mini quoter" rel="tooltip" title="Quote" onclick="return quoteTicket('t{$ticket.id}');"><i class="icon-share"></i></a>
                     <div class="clear"></div>
